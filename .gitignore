@@ -1,0 +1,21 @@
+﻿build/
+dist/
+*.py[cod]
+__pycache__/
+
+# Local payload directory used for packaging.
+app_payload/
+
+# Release artifacts should be uploaded to GitHub Releases, not committed.
+*.exe
+*.zip
+*.7z
+*.rar
+*.mp4
+*.sha256.txt
+SHA256SUMS.txt
+
+# Runtime temporary files.
+temp_ocr_region.bmp
+temp_ocr_region_processed.bmp
+新建 文本文档.txt
