@@ -6,6 +6,7 @@ import os
 
 project_root = Path.cwd()
 source_root = Path(os.environ.get("APP_PAYLOAD_DIR", project_root / "app_payload")).resolve()
+launcher_path = project_root / "src" / "launcher.py"
 exclude_names = {"新建 文本文档.txt", "temp_ocr_region.bmp", "temp_ocr_region_processed.bmp"}
 
 if not source_root.exists():
@@ -24,7 +25,7 @@ for path in source_root.rglob("*"):
         datas.append((str(path), dest))
 
 a = Analysis(
-    ["src/launcher.py"],
+    [str(launcher_path)],
     pathex=[str(project_root)],
     binaries=[],
     datas=datas,
@@ -52,6 +53,7 @@ exe = EXE(
     upx_exclude=[],
     runtime_tmpdir=None,
     console=False,
+    uac_admin=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
