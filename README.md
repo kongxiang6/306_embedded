@@ -27,7 +27,7 @@
 Release 成品：
 
 1. 到 GitHub Releases 下载 `306_single.exe`。
-2. 同时下载 `新手肉蛋教程.mp4` 和 `USER_GUIDE.md`。
+2. 同时下载 `operation_tutorial.mp4` 和 `USER_GUIDE.md`。
 3. 双击 `306_single.exe` 启动。
 4. 第一次使用建议先看视频教程，再按说明书绑定窗口并设置参数。
 
@@ -57,4 +57,4 @@ Release 中的 `306_single.exe` 会把运行目录打包到内部，并在运行
 
 ## 开源说明
 
-如果准备发布到 GitHub，请优先补充完整源码、构建脚本、依赖来源说明和第三方许可。当前发布包内包含多个第三方运行库和主题资源，详见 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)。
+如果准备发布到 GitHub，请优先补充完整源码、构建脚本、依赖来源说明和第三方许可。当前发布包内包含多个第三方运行库和主题资源，详见 [THIRD_PARTY_NOTICES.md](./docs/THIRD_PARTY_NOTICES.md)。
