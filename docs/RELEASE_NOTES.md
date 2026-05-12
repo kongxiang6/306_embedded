@@ -12,7 +12,7 @@
 - 确认 `jdgc721.exe`、`dm.dll`、`DmReg.dll`、`python312.dll` 存在。
 - 确认所有 `*.bmp` 模板文件存在。
 - 确认 `ziku.txt`、`ziku1.txt`、`newpeizhuang.txt`、`new余额.txt`、`房卡.txt` 存在。
-- 确认 `使用说明.md`、`README.md`、`THIRD_PARTY_NOTICES.md` 随包发布。
+- 确认 `USER_GUIDE.md`、`README.md`、`THIRD_PARTY_NOTICES.md` 随包发布。
 - 确认 `operation_tutorial.mp4` 随包发布。
 - 确认 Windows 显示环境建议写明：`1920 x 1080`、`100%` 缩放、横向显示。
 - 确认发布包没有误带本机账号、私密路径、聊天记录、录屏文件或调试日志。
