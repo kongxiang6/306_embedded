@@ -45,6 +45,10 @@
 
 - `operation_tutorial.mp4`
 
+项目还附带双开 PDF 教程：
+
+- `wegame_official_launcher_dual_open_tutorial.pdf`：WeGame 和官方启动器双开教程
+
 第一次使用建议先看视频，再按本文档操作。视频中演示了显示设置、游戏设置、版本选择、窗口绑定、参数填写和运行日志观察流程。
 
 ### 目录版

@@ -14,6 +14,7 @@
 - 确认 `ziku.txt`、`ziku1.txt`、`newpeizhuang.txt`、`new余额.txt`、`房卡.txt` 存在。
 - 确认 `USER_GUIDE.md`、`README.md`、`THIRD_PARTY_NOTICES.md` 随包发布。
 - 确认 `operation_tutorial.mp4` 随包发布。
+- 确认 `wegame_official_launcher_dual_open_tutorial.pdf` 随包发布。
 - 确认 Windows 显示环境建议写明：`1920 x 1080`、`100%` 缩放、横向显示。
 - 确认单文件版和目录版都要求管理员权限运行。
 - 确认发布包没有误带本机账号、私密路径、聊天记录、录屏文件或调试日志。
@@ -37,4 +38,5 @@
 - 目录版压缩包
 - 单文件版 exe
 - 操作视频教程
+- WeGame 和官方启动器双开 PDF 教程
 - SHA256 校验文件

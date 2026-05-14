@@ -27,7 +27,7 @@
 Release 成品：
 
 1. 到 GitHub Releases 下载 `306_single.exe`。
-2. 同时下载 `operation_tutorial.mp4` 和 `USER_GUIDE.md`。
+2. 同时下载 `operation_tutorial.mp4`、`wegame_official_launcher_dual_open_tutorial.pdf` 和 `USER_GUIDE.md`。
 3. 双击 `306_single.exe` 启动。
 4. 在 Windows UAC 弹窗中选择允许管理员权限。
 5. 第一次使用建议先看视频教程，再按说明书绑定窗口并设置参数。
@@ -47,6 +47,7 @@ Release 成品：
 - `docs/USER_GUIDE.md`：面向用户的操作说明
 - `docs/RELEASE_NOTES.md`：发布说明
 - `docs/THIRD_PARTY_NOTICES.md`：第三方依赖说明
+- `docs/wegame_official_launcher_dual_open_tutorial.pdf`：WeGame 和官方启动器双开教程
 
 ## 分发说明
 
