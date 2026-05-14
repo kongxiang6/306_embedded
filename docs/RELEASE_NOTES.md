@@ -30,13 +30,9 @@
 
 ## 建议发布文件
 
-- `README.md`
-- `使用说明.md`
-- `发布说明.md`
-- `THIRD_PARTY_NOTICES.md`
-- `LICENSE`
-- 目录版压缩包
-- 单文件版 exe
-- 操作视频教程
-- WeGame 和官方启动器双开 PDF 教程
-- SHA256 校验文件
+- `306_single.exe`：单文件成品，只包含软件运行所需文件
+- `operation_tutorial.mp4`：操作视频教程
+- `wegame_official_launcher_dual_open_tutorial.pdf`：WeGame 和官方启动器双开 PDF 教程
+- `USER_GUIDE.md`：操作说明
+
+GitHub Release 页面会显示附件 digest，当前不再单独上传 `SHA256SUMS.txt`。
