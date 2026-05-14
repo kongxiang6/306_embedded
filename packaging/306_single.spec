@@ -7,7 +7,25 @@ import os
 project_root = Path.cwd()
 source_root = Path(os.environ.get("APP_PAYLOAD_DIR", project_root / "app_payload")).resolve()
 launcher_path = project_root / "src" / "launcher.py"
-exclude_names = {"新建 文本文档.txt", "temp_ocr_region.bmp", "temp_ocr_region_processed.bmp"}
+
+# Only bundle files needed by the application at runtime. Tutorials, guides,
+# release notes, and other user-facing documents are published as Release
+# assets instead of being embedded into the single-file executable.
+exclude_names = {
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "RELEASE_NOTES.md",
+    "THIRD_PARTY_NOTICES.md",
+    "USER_GUIDE.md",
+    "使用说明.md",
+    "发布说明.md",
+    "新建 文本文档.txt",
+    "temp_ocr_region.bmp",
+    "temp_ocr_region_processed.bmp",
+}
+exclude_suffixes = {".mp4", ".pdf", ".bak"}
+exclude_dirs = {"tutorials", "__pycache__"}
 
 if not source_root.exists():
     raise SystemExit(
@@ -18,8 +36,10 @@ if not source_root.exists():
 datas = []
 
 for path in source_root.rglob("*"):
-    if path.is_file() and path.name not in exclude_names:
-        rel = path.relative_to(source_root)
+    rel = path.relative_to(source_root)
+    if any(part in exclude_dirs for part in rel.parts):
+        continue
+    if path.is_file() and path.name not in exclude_names and path.suffix.lower() not in exclude_suffixes:
         parent = rel.parent
         dest = str(Path("app") / parent) if str(parent) != "." else "app"
         datas.append((str(path), dest))
